@@ -1,1 +1,1 @@
-# Text_Summarizer_end-to-end_nlp_project
+# Text Summarizer end-to-end NLP Project
