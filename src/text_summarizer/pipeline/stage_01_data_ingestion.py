@@ -1,6 +1,5 @@
 from text_summarizer.config.configuration import ConfigurationManager
 from text_summarizer.components.data_ingestion import DataIngestion
-from text_summarizer.logging.logger import logging
 
 
 class DataIngestionTrainingPipeline:
