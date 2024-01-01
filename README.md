@@ -51,7 +51,7 @@ Email: rvraghvender@gmail.com
     b. ```AmazonEC2FullAccess```     
 
 ##  3. Create ECR repo to store/save docker image
-- Save the URI: 
+- Save the URI: 315049520046.dkr.ecr.eu-west-3.amazonaws.com/text_summarization
 
 ##  4. Create EC2 machine (Ubuntu)
 
@@ -65,7 +65,7 @@ sudo apt-get upgrade
 # required
 curl -fsSL https://get.docker.com -o get-docker.sh    
 sudo sh get-docker.sh    
-sudo usermod -aG docker Ubuntu    
+sudo usermod -aG docker ubuntu    
 newgrp docker    
 ```
 
