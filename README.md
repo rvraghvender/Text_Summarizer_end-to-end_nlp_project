@@ -20,11 +20,11 @@ Update
 
 2.  Create a conda environment in the /path/to/Text_Summarizer_end-to-end_nlp_project    
     
-    a.  ```conda create -n text_summarization python='3.8' -y```    
-    b.  ```conda activate text_summarization```    
-    c.  ```pip install -r requirements.txt```     
-    d.  ```python app.py```    
-    e.  open your local host and port.    
+    #### a.  ```conda create -n text_summarization python='3.8' -y```    
+    #### b.  ```conda activate text_summarization```    
+    #### c.  ```pip install -r requirements.txt```     
+    #### d.  ```python app.py```    
+    #### e.  open your local host and port.    
 
 ```
 Author: Raghvender
@@ -40,8 +40,8 @@ Email: rvraghvender@gmail.com
 
     # with specific access
 
-    a. EC2 access : It is a virtual machine
-    b. Elastic Container Registry (ECR): To save the docker image in aws
+#### a. EC2 access : It is a virtual machine
+#### b. Elastic Container Registry (ECR): To save the docker image in AWS
 
 
     # Description: About the deployment
@@ -62,7 +62,7 @@ Email: rvraghvender@gmail.com
 
 ##  5. Open EC2 and Install docker in EC2 Machine
 
-        ``` 
+        ```bash
         # Optional
         sudo apt-get update -y    
         sudo apt-get upgrade    
