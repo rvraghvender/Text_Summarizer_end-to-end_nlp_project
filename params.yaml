@@ -7,5 +7,5 @@ TrainingArguments:
   logging_steps: 10
   evaluation_strategy: steps
   eval_steps: 500
-  save_steps: 1e6
+  save_steps: 0.000001
   gradient_accumulation_steps: 16

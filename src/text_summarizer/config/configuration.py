@@ -4,6 +4,7 @@ from text_summarizer.entity import DataIngestionConfig
 from text_summarizer.entity import DataValidationConfig
 from text_summarizer.entity import DataTransformationConfig
 from text_summarizer.entity import ModelTrainerConfig
+from text_summarizer.entity import ModelEvaluationConfig
 
 
 class ConfigurationManager:
@@ -18,7 +19,6 @@ class ConfigurationManager:
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
-
         create_directories([config.root_dir])
 
         data_ingestion_config = DataIngestionConfig(
@@ -58,6 +58,7 @@ class ConfigurationManager:
 
         config = self.config.model_trainer
         params = self.params.TrainingArguments
+        create_directories([config.root_dir])
 
         model_trainer_config = ModelTrainerConfig(
             root_dir=config.root_dir,
@@ -73,7 +74,21 @@ class ConfigurationManager:
             eval_steps=params.eval_steps,
             save_steps=params.save_steps,
             gradient_accumulation_steps=params.gradient_accumulation_steps
+        )
+        
+        return model_trainer_config
+    
 
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        create_directories([config.root_dir])
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            model_path=config.model_path,
+            tokenizer_path=config.tokenizer_path,
+            metric_file_name=config.metric_file_name
         )
 
-        return model_trainer_config
+        return model_evaluation_config
