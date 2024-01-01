@@ -17,7 +17,7 @@ Update
 
 1.  Clone the repository:    
     ```https://github.com/rvraghvender/Text_Summarizer_end-to-end_nlp_project.git```
-2.  Create a conda environment in the /path/to/Text_Summarizer_end-to-end_nlp_project/      
+2.  Create a conda environment in the /path/to/Text_Summarizer_end-to-end_nlp_project/ directory
     a.  ```conda create -n text_summarization python='3.8' -y```       
     b.  ```conda activate text_summarization```        
     c.  ```pip install -r requirements.txt```         
@@ -37,14 +37,14 @@ Email: rvraghvender@gmail.com
 ##  2. Create IAM user for deployment
     
 - #### With specific access
-    a. EC2 access : It is a virtual machine
-    b. Elastic Container Registry (ECR): To save the docker image in AWS
+    a. EC2 access : It is a virtual machine    
+    b. Elastic Container Registry (ECR): To save the docker image in AWS    
 
 - #### Description: About the deployment
-    a. Build docker image of the source code
-    b. Push docker image to ECR
-    c. Launch EC2 instance
-    d. Pull image from ECR2 in EC2
+    a. Build docker image of the source code    
+    b. Push docker image to ECR    
+    c. Launch EC2 instance    
+    d. Pull image from ECR2 in EC2    
 
 - #### Policy:
     a. AmazonEC2ContainerRegistryFullAccess
