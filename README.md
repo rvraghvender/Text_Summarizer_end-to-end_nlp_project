@@ -47,8 +47,8 @@ Email: rvraghvender@gmail.com
     d. Pull image from ECR2 in EC2    
 
 - #### Policy:
-    a. AmazonEC2ContainerRegistryFullAccess
-    b. AmazonEC2FullAccess
+    a. ```AmazonEC2ContainerRegistryFullAccess```     
+    b. ```AmazonEC2FullAccess```     
 
 ##  3. Create ECR repo to store/save docker image
 - Save the URI: 
