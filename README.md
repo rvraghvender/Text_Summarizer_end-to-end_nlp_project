@@ -15,28 +15,22 @@ Update
 
 # Steps to run:
 
-    1.  Clone the repository:
-        ```bash
-            https://github.com/rvraghvender/Text_Summarizer_end-to-end_nlp_project.git
-        ```
-    2.  Create a conda environment in the /path/to/Text_Summarizer_end-to-end_nlp_project
-        
-        a.  ```bash
-            conda create -n text_summarization python='3.8' -y
-            ```
-        b.  ```
-            conda activate text_summarization
-            ``` 
-        c.  ```bash
-            python app.py
-            ```
-        d.  open your local host and port.
+1.  Clone the repository:
+    ```https://github.com/rvraghvender/Text_Summarizer_end-to-end_nlp_project.git```
 
-    ```
-    Author: Raghvender
-    Data Scientist / Machine Learning Engineer
-    Email: rvraghvender@gmail.com
-    ```
+2.  Create a conda environment in the /path/to/Text_Summarizer_end-to-end_nlp_project
+    
+    a.  ```conda create -n text_summarization python='3.8' -y```
+    b.  ```conda activate text_summarization```
+    c.  ```pip install -r requirements.txt``` 
+    d.  ```python app.py```
+    e.  open your local host and port.
+
+```
+Author: Raghvender
+Data Scientist / Machine Learning Engineer
+Email: rvraghvender@gmail.com
+```
     
 # AWS - CI/CD Deployment with GitHub-Actions
 
