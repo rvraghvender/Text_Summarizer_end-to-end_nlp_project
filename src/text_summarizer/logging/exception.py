@@ -1,5 +1,5 @@
 import sys
-from src.logger import logging
+from text_summarizer.logging.logger import logging
 
 def error_message_detail(error, error_detail: sys):
     " Raising custom exception. "
