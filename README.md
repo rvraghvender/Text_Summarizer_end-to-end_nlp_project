@@ -1,13 +1,18 @@
-# Text Summarizer end-to-end NLP Project
-Text summarization is a fascinating area within natural language processing, and the Google Pegasus CNN model is known for its prowess in generating concise and coherent summaries of lengthy text. However, one of the challenges I encountered during this project was the computational demands of training such a powerful model. The model is quite heavy for a normal laptop GPU, and my Nvidia Quadro T2000 with just 4 GB memory couldn't handle the workload for real-world NLP tasks.
+<div align=center>
+    
+# Text Summarizer: An end-to-end NLP Project Using Google Pegasus
+</div>
+Welcome to my Text Summarizer project, an exploration into the cutting-edge world of natural language processing (NLP). Text summarization is a fascinating area within natural language processing, and the Google Pegasus CNN model is known for its prowess in generating concise and coherent summaries of lengthy text. However, one of the challenges I encountered during this project was the computational demands of training such a powerful model. The model is quite heavy for a normal laptop GPU, and my Nvidia Quadro T2000 with just 4 GB memory couldn't handle the workload for real-world NLP tasks. I want to express my gratitude to Google Colab for providing free GPU resources that allowed me to train and experiment with this model effectively. It's essential to make the most of available resources, and while my laptop may not have been suitable for this particular task, I can confidently say that I've pushed it to its limits in pursuit of knowledge and innovation.
 
-I want to express my gratitude to Google Colab for providing free GPU resources that allowed me to train and experiment with this model effectively. It's essential to make the most of available resources, and while my laptop may not have been suitable for this particular task, I can confidently say that I've pushed it to its limits in pursuit of knowledge and innovation.
+## Getting Started with Pegasus Model
 
-## About the Pegasus model
+To begin experimenting with the Pegasus model, you can download the pre-trained version from the Hugging Face library:
 
-Google PEGASUS-CNN Daily is a large language model (LLM) developed by Google AI. It is trained on a massive dataset of text and code, and is specifically designed for natural language generation (NLG) tasks, such as text summarization, question answering, and dialogue generation.
+[![Pegasus Model](https://huggingface.co/google/pegasus-cnn_dailymail)](https://huggingface.co/google/pegasus-cnn_dailymail)
 
-Pretrained model can be downloaded from Hugging Face library: [Pegasus]<https://huggingface.co/google/pegasus-cnn_dailymail>
+Google PEGASUS-CNN Daily is a large language model (LLM) developed by Google AI. It is trained on a massive dataset of text and code and is specifically designed for natural language generation (NLG) tasks, such as text summarization, question answering, and dialogue generation.
+
+The pre-trained model can be downloaded from the Hugging Face library: [!Pegasus]<https://huggingface.co/google/pegasus-cnn_dailymail>
 
 ### Key Features:
 
@@ -99,5 +104,10 @@ newgrp docker
     ECR_REPOSITORY_NAME =     
 
 ## Author
-Name - Raghvender
+Name - Raghvender     
 Email - rvraghvender@gmail.com
+
+
+## Contributing
+
+Your contributions are always welcome! If you have suggestions for improvements or want to report a bug, please feel free to open an issue or submit a pull request.
