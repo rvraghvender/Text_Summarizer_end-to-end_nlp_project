@@ -1,6 +1,8 @@
 import os
 from text_summarizer.logging.logger import logging
 from text_summarizer.entity import DataValidationConfig
+from text_summarizer.logging.exception import CustomException
+
 
 # To check
 class DataValidation:
@@ -24,4 +26,5 @@ class DataValidation:
             return validation_status
         
         except Exception as e:
-            raise e
+            logging.exception(e)
+            raise CustomException(e, sys)

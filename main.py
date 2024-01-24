@@ -4,6 +4,8 @@ from text_summarizer.pipeline.stage_03_data_transformation import DataTransforma
 from text_summarizer.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
 from text_summarizer.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 from text_summarizer.logging.logger import logging
+from text_summarizer.logging.exception import CustomException
+import sys
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -13,7 +15,7 @@ try:
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logging.exception(e)
-        raise e
+        raise CustomException(e, sys)
 
 
 STAGE_NAME = "Data Validation stage"
@@ -23,7 +25,8 @@ try:
    data_validation.main()
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
-   raise e
+   logging.exception(e)
+   raise CustomException(e, sys)
 
 
 STAGE_NAME = 'Data Transformation stage'
@@ -34,7 +37,7 @@ try:
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
    logging.exception(e)
-   raise e
+   raise CustomException(e, sys)
 
 STAGE_NAME = 'Model Training stage'
 try:
@@ -44,7 +47,7 @@ try:
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
    logging.exception(e)
-   raise e
+   raise CustomException(e, sys)
 
 STAGE_NAME = 'Model Evaluation stage'
 try:
@@ -54,5 +57,5 @@ try:
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
    logging.exception(e)
-   raise e
+   raise CustomException(e, sys)
 
